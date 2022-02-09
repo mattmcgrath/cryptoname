@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Your random cryptobro name is:
+
+<p id="demo"></p>
+
+<script>
+	//Top 50 most common russian first names as listed on https://www.thoughtco.com/common-russian-names-4770041
+	russian_first_names = ['Sofia','Anastasia','Victoria','Xenia','Arina','Yelizaveta','Adelina','Irina','Yelena','Polina','Daria','Natalia','Svetlana','Vera','Nadezhda','Galina','Lyubov','Aleksandra','Maria','Anna','Angelina','Marina','Yekaterina','Ludmila','Tatiana','Artyom','Aleksandr','Roman','Yevgeny','Ivan','Maksim','Denis','Alexey','Dmitry','Danyl','Sergey','Nikolai','Konstantin','Nikita','Mikhail','Boris','Victor','Gennady','Vyacheslav','Vladimir','Andrey','Anatoly','Ilya','Kirill','Oleg'];
+	
+	// Circa 2000 listing of OECD "uncooperative tax havens" from https://www.oecd.org/countries/monaco/list-of-unco-operative-tax-havens.htm
+	tax_haven_names = ['Andorra ',
+'Liechtenstein','Liberia','Monaco','Marshall Islands','Nauru','Vanuatu'];
+	
+	broname = russian_first_names[Math.floor(Math.random() * russian_first_names.length)] + " " + tax_haven_names[Math.floor(Math.random() * tax_haven_names.length)];
+	document.getElementById("demo").innerHTML = broname;
+</script> 
+
+</body>
+</html>
